@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
     @IBAction func buttonAction(_ sender: UIButton) {
+        //OverLayerView.shared.appear(sender: self)
+        let overLayerView = OverLayerView()
+        overLayerView.appear(sender: self)
     }
     
     

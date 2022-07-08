@@ -13,6 +13,8 @@
 		5F5947E1287895E200D9A84D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5947DF287895E200D9A84D /* Main.storyboard */; };
 		5F5947E3287895E400D9A84D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5947E2287895E400D9A84D /* Assets.xcassets */; };
 		5F5947E6287895E400D9A84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5947E4287895E400D9A84D /* LaunchScreen.storyboard */; };
+		5F5947F028789A9300D9A84D /* OverLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5947EE28789A9300D9A84D /* OverLayerView.swift */; };
+		5F5947F128789A9300D9A84D /* OverLayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5947EF28789A9300D9A84D /* OverLayerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F5947E2287895E400D9A84D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F5947E5287895E400D9A84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F5947E7287895E400D9A84D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5947EE28789A9300D9A84D /* OverLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLayerView.swift; sourceTree = "<group>"; };
+		5F5947EF28789A9300D9A84D /* OverLayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverLayerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		5F5947D8287895E200D9A84D /* CustomPopUp */ = {
 			isa = PBXGroup;
 			children = (
+				5F5947ED287897E000D9A84D /* OverLayer */,
 				5F5947D9287895E200D9A84D /* AppDelegate.swift */,
 				5F5947DB287895E200D9A84D /* SceneDelegate.swift */,
 				5F5947DD287895E200D9A84D /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				5F5947E7287895E400D9A84D /* Info.plist */,
 			);
 			path = CustomPopUp;
+			sourceTree = "<group>";
+		};
+		5F5947ED287897E000D9A84D /* OverLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5F5947EE28789A9300D9A84D /* OverLayerView.swift */,
+				5F5947EF28789A9300D9A84D /* OverLayerView.xib */,
+			);
+			path = OverLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,7 @@
 			files = (
 				5F5947E6287895E400D9A84D /* LaunchScreen.storyboard in Resources */,
 				5F5947E3287895E400D9A84D /* Assets.xcassets in Resources */,
+				5F5947F128789A9300D9A84D /* OverLayerView.xib in Resources */,
 				5F5947E1287895E200D9A84D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +155,7 @@
 			files = (
 				5F5947DE287895E200D9A84D /* ViewController.swift in Sources */,
 				5F5947DA287895E200D9A84D /* AppDelegate.swift in Sources */,
+				5F5947F028789A9300D9A84D /* OverLayerView.swift in Sources */,
 				5F5947DC287895E200D9A84D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

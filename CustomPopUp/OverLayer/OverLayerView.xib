@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverLayerView" customModule="CustomPopUp" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="cSv-FG-Fbq" id="fpf-E0-QFW"/>
+                <outlet property="contentView" destination="RFc-7r-ept" id="a7i-g0-Nj8"/>
+                <outlet property="doneButton" destination="Wje-hu-jWK" id="kVm-wW-r5P"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSv-FG-Fbq" userLabel="backView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-7r-ept" userLabel="contentView">
+                    <rect key="frame" x="87" y="296" width="240" height="304"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Vc-NG-AT9">
+                            <rect key="frame" x="0.0" y="10" width="240" height="284"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwiftAcademy" translatesAutoresizingMaskIntoConstraints="NO" id="sx8-Fi-plz">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="Q74-c0-XEg"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom OverLayer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsi-b3-9hU">
+                                    <rect key="frame" x="41.5" y="116.5" width="157.5" height="23"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw7-b6-t5O">
+                                    <rect key="frame" x="37" y="175.5" width="166.5" height="41"/>
+                                    <string key="text">This is Swift Academy
+Please subscribe</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wje-hu-jWK">
+                                    <rect key="frame" x="10" y="253" width="220" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="31" id="Duf-XS-kdp"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Done" cornerStyle="large">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        </backgroundConfiguration>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="doneButtonAction:" destination="-1" eventType="touchUpInside" id="Xba-LZ-tcq"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="sx8-Fi-plz" firstAttribute="top" secondItem="4Vc-NG-AT9" secondAttribute="top" id="F5p-Fk-qm8"/>
+                                <constraint firstItem="Wje-hu-jWK" firstAttribute="leading" secondItem="4Vc-NG-AT9" secondAttribute="leading" constant="10" id="FoJ-5J-8Ah"/>
+                                <constraint firstAttribute="trailing" secondItem="Wje-hu-jWK" secondAttribute="trailing" constant="10" id="INW-gg-OQu"/>
+                                <constraint firstItem="sx8-Fi-plz" firstAttribute="leading" secondItem="4Vc-NG-AT9" secondAttribute="leading" id="a0Z-Rd-JIZ"/>
+                                <constraint firstAttribute="trailing" secondItem="sx8-Fi-plz" secondAttribute="trailing" id="wPT-dL-3Hr"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="4Vc-NG-AT9" firstAttribute="leading" secondItem="RFc-7r-ept" secondAttribute="leading" id="6es-4h-uDv"/>
+                        <constraint firstAttribute="width" constant="240" id="Ca2-aZ-QQ0"/>
+                        <constraint firstItem="4Vc-NG-AT9" firstAttribute="top" secondItem="RFc-7r-ept" secondAttribute="top" constant="10" id="LWH-uH-tfK"/>
+                        <constraint firstAttribute="height" constant="304" id="Xhn-ty-rV1"/>
+                        <constraint firstAttribute="trailing" secondItem="4Vc-NG-AT9" secondAttribute="trailing" id="aOM-Te-DU0"/>
+                        <constraint firstAttribute="bottom" secondItem="4Vc-NG-AT9" secondAttribute="bottom" constant="10" id="edE-O3-7YV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <constraints>
+                <constraint firstItem="RFc-7r-ept" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uyn-Dc-af0"/>
+                <constraint firstItem="RFc-7r-ept" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zwb-p7-LxB"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="143.97321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SwiftAcademy" width="1000" height="1000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
